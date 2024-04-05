@@ -1,17 +1,8 @@
 import java.util.Scanner;
 
 public class Factorial {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ingresar un número entero: ");
-        int num = scanner.nextInt();
-        System.out.println(factorial(num));
-        
-        scanner.close();
-    }
-
-    public static int factorial(int num){
+    public static int calcular(int num){
         if (num == 0 || num == 1)
             return 1;
         else{
@@ -21,5 +12,15 @@ public class Factorial {
             }
             return resultado;
         }
-    }    
+    } 
+    
+    public static void imprimirFactorial() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Ingresar un número entero: ");
+        int num = scanner.nextInt();
+        System.out.println(calcular(num));
+        
+        scanner.close();
+    }
 }

@@ -1,7 +1,15 @@
 import java.util.Scanner;
 
 public class ParesAB {
-    public static void main(String[] args) {
+
+    public static void mostrarPares(int numA, int numB){
+        for (int i = numA; i < numB; i++){
+            if (i % 2 == 0){
+                System.out.println(i);
+            }
+        }
+    }
+    public static void imprimirPares() {
         Scanner scanner = new Scanner(System.in);
         int numA, numB;
 
@@ -17,13 +25,5 @@ public class ParesAB {
         mostrarPares(numA, numB);
 
         scanner.close();
-    }
-
-    public static void mostrarPares(int numA, int numB){
-        for (int i = numA; i < numB; i++){
-            if (i % 2 == 0){
-                System.out.println(i);
-            }
-        }
     }
 }

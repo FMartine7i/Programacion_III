@@ -1,7 +1,26 @@
 import java.util.Scanner;
 
 public class Triangulo {
-    public static void main(String[] args) {
+
+    public static void esTriangulo(int a, int b, int c){
+        if (a + b > c && a + c > b && b + c > a){
+            System.out.println("Es un triángulo");
+        }
+        else
+            System.out.println("No es un triángulo");
+    }
+
+    public static void tipoTriangulo(int a, int b, int c)
+    {
+        if (a == b && b == c)
+            System.out.println("El triángulo es equilátero");
+        else if (a == b || b == c || a == c)
+            System.out.println("El triángulo es isósceles");
+        else
+            System.out.println("El triángulo es escaleno");
+    }
+
+    public static void respuestaTriangulo() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Ingresar el lado A del triángulo: ");
@@ -21,23 +40,5 @@ public class Triangulo {
             System.out.println("Los lados deben ser mayores a 0");
 
         scanner.close();
-    }
-
-    public static void esTriangulo(int a, int b, int c){
-        if (a + b > c && a + c > b && b + c > a){
-            System.out.println("Es un triángulo");
-        }
-        else
-            System.out.println("No es un triángulo");
-    }
-
-    public static void tipoTriangulo(int a, int b, int c)
-    {
-        if (a == b && b == c)
-            System.out.println("El triángulo es equilátero");
-        else if (a == b || b == c || a == c)
-            System.out.println("El triángulo es isósceles");
-        else
-            System.out.println("El triángulo es escaleno");
     }
 }

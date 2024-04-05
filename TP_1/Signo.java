@@ -1,11 +1,6 @@
 import java.util.Scanner;
 
 public class Signo {
-    public static void main(String[] args) {
-        
-        conDoWhile();
-
-    }
 
     public static void conWhile(){
         Scanner scanner = new Scanner(System.in);
@@ -47,6 +42,25 @@ public class Signo {
     }
 
     public static void conOpcionString(){
-        
-    }
+        Scanner input = new Scanner(System.in);
+        String option = input.nextLine();
+        String op = option.toUpperCase(); 
+
+        do{
+            System.out.println("Ingresar un número entero: ");
+            int num = input.nextInt();
+            
+            if(num != 0){
+                if (num > 0)
+                        System.out.println("El número ingresado es positivo");
+                    else
+                        System.out.println("El número ingresado es negativo");
+            }
+            
+            System.out.println("¿Desea introducir más números? (S/N): ");
+        }
+        while(op != "N");
+
+        input.close();
+    } 
 }

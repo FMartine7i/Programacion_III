@@ -1,14 +1,17 @@
 public class MostrarNumeros {
-    public static void main(String[] args) {
-        imprimir();
-    }
-
+    
     public static void imprimir(){
-        int num = 1;
+        int num = 100;
         do{
             System.out.println(num);
-            num++;
+            num--;
         }
-        while (num <= 100);
+        while (num <= 1);
+    }
+
+    public static void contar(){
+        for (int i = 500; i >= 200; i--){
+            System.out.println(i);
+        }
     }
 }

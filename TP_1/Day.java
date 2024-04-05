@@ -1,18 +1,6 @@
 import java.util.Scanner;
 
 public class Day {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-
-        System.out.println("Ingrese día de la semana (1-7): ");
-        int day = input.nextInt();
-
-        esDia(day);
-        esDiaLaboral(day);
-        
-
-        input.close();
-    }
     
     public static void esDia(int num){
         switch (num){
@@ -47,6 +35,18 @@ public class Day {
             System.out.println("Es día laboral.");
         else
             System.out.println("Es fin de semana.");
+    }
+
+    public static void mostrarDia() {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Ingrese día de la semana (1-7): ");
+        int day = input.nextInt();
+
+        esDia(day);
+        esDiaLaboral(day);
+
+        input.close();
     }
     
 }
