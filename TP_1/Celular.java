@@ -28,12 +28,5 @@ public class Celular {
 
     public void cortarLlamada(){
         System.out.println("Llamada terminada.");
-    }
-
-    public static void main(String[] args){
-        Celular celular = new Celular("Samsung", "S9");
-        celular.realizarLlamada();
-        celular.cortarLlamada();
-    }
-    
+    }   
 }

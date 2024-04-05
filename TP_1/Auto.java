@@ -28,10 +28,4 @@ public class Auto {
         else
             System.out.println("No hay autos que superen los 100000 km");
     }
-
-    public static void main(String[] args){
-        Auto auto = new Auto("gris", "ABC123", 2018, "Dodge", 100001);
-        auto.encender();
-        auto.kilometrajeMayor();
-    }
 }

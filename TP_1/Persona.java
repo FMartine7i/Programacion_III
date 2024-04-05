@@ -39,11 +39,6 @@ public class Persona {
             System.out.println("Es menor de edad");
         }
     }
-
-    public static void main(String[] args){
-        Persona persona = new Persona("Lautaro", "Martinez", 'M', 25, "Bahia Blanca");
-        persona.mayorDeEdad();
-    }
 }
 
 
