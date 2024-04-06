@@ -14,13 +14,9 @@ public class Factorial {
         }
     } 
     
-    public static void imprimirFactorial() {
-        Scanner scanner = new Scanner(System.in);
-
+    public static void imprimirFactorial(Scanner input) {
         System.out.println("Ingresar un número entero: ");
-        int num = scanner.nextInt();
+        int num = input.nextInt();
         System.out.println(calcular(num));
-        
-        scanner.close();
     }
 }

@@ -33,15 +33,15 @@ public class App {
                     break;
                 case 7:
                     System.out.println("\nEjercicio 7: Mostrar pares");
-                    Paridad.devolverParidad();
+                    Paridad.devolverParidad(input);
                     break;
                 case 8:
                     System.out.println("\nEjercicio 8: Comprobar letra mayuscula");
-                    LeerCaracter.comprobarMayuscula();
+                    LeerCaracter.comprobarMayuscula(input);
                     break;
                 case 9:
                     System.out.println("\nEjercicio 9: Comprobar triangulo");
-                    Triangulo.respuestaTriangulo();
+                    Triangulo.respuestaTriangulo(input);
                     break;
                 case 11:
                     System.out.println("\nEjercicio 11: Contar de 100 a 1");
@@ -49,7 +49,7 @@ public class App {
                     break;
                 case 12:
                     System.out.println("\nEjercicio 12: Calcular factorial");
-                    Factorial.imprimirFactorial();
+                    Factorial.imprimirFactorial(input);
                     break;
                 case 13:
                     System.out.println("\nEjercicio 13: Contar del 500 al 200");
@@ -57,23 +57,24 @@ public class App {
                     break;
                 case 14:
                     System.out.println("\nEjercicio 14: Mostrar pares entre A y B");
-                    ParesAB.imprimirPares();
+                    ParesAB.imprimirPares(input);
                     break;
                 case 15:
                     System.out.println("\nEjercicio 15: Indicar signo y paridad");
                     System.out.println("Bucle While");
-                    Signo.conWhile();
+                    Signo.conWhile(input);
                     System.out.println("\nBucle Do-While");
-                    Signo.conDoWhile();
+                    Signo.conDoWhile(input);
                     System.out.println("\nBucle con opcion String");
-                    Signo.conOpcionString();
+                    Signo.conOpcionString(input);
                     break;
                 case 16:
-                    System.out.println("Convertir millas a kilometros");
+                    System.out.println("\nEjercicio 16: Convertir millas a kilometros");
+                    ConvertirDistancia.ingresarDistancia(input);
                     break;
                 case 17:
                 System.out.println("\nEjercicio 17: Mostrar día de la semana");
-                    Day.mostrarDia();
+                    Day.mostrarDia(input);
                     break;
                 case 19:
                     System.out.println("Formar string");

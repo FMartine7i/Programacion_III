@@ -12,9 +12,7 @@ public class LeerCaracter {
             System.out.println(c + " no es una letra");
     }
 
-    public static void comprobarMayuscula() {
-        Scanner scanner = new Scanner(System.in);
-
+    public static void comprobarMayuscula(Scanner scanner) {
         System.out.println("Ingresar un caracter: ");
         String input = scanner.next();
 
@@ -24,7 +22,5 @@ public class LeerCaracter {
         }
         else
             System.out.println("Debe ingresar un solo caracter del alfabeto.");
-        
-        scanner.close();
     }
 }

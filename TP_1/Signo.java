@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 public class Signo {
 
-    public static void conWhile(){
-        Scanner scanner = new Scanner(System.in);
+    public static void conWhile(Scanner scanner){
         System.out.println("Ingresar un número entero (0 para salir): ");
         int num = scanner.nextInt();
 
@@ -17,12 +16,10 @@ public class Signo {
                 System.out.println("Ingresar otro número entero (0 para salir): ");
                 num = scanner.nextInt();
             }
-            scanner.close();
         }
     }
 
-    public static void conDoWhile(){
-        Scanner scanner = new Scanner(System.in);
+    public static void conDoWhile(Scanner scanner){
         int num;
 
         do{
@@ -37,12 +34,9 @@ public class Signo {
             }
         }
         while(num != 0);
-
-        scanner.close();
     }
 
-    public static void conOpcionString(){
-        Scanner input = new Scanner(System.in);
+    public static void conOpcionString(Scanner input){
         String option = input.nextLine();
         String op = option.toUpperCase(); 
 
@@ -60,7 +54,5 @@ public class Signo {
             System.out.println("¿Desea introducir más números? (S/N): ");
         }
         while(op != "N");
-
-        input.close();
     } 
 }

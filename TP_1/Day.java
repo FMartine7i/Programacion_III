@@ -37,16 +37,12 @@ public class Day {
             System.out.println("Es fin de semana.");
     }
 
-    public static void mostrarDia() {
-        Scanner input = new Scanner(System.in);
-
+    public static void mostrarDia(Scanner input) {
         System.out.println("Ingrese día de la semana (1-7): ");
         int day = input.nextInt();
 
         esDia(day);
         esDiaLaboral(day);
-
-        input.close();
     }
     
 }

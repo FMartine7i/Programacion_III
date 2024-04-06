@@ -9,8 +9,7 @@ public class ParesAB {
             }
         }
     }
-    public static void imprimirPares() {
-        Scanner scanner = new Scanner(System.in);
+    public static void imprimirPares(Scanner scanner) {
         int numA, numB;
 
         do{
@@ -23,7 +22,5 @@ public class ParesAB {
         while(numA >= numB);
 
         mostrarPares(numA, numB);
-
-        scanner.close();
     }
 }

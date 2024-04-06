@@ -11,13 +11,11 @@ public class Paridad {
         }
     }
 
-    public static void devolverParidad() {
-        Scanner scanner = new Scanner(System.in);
+    public static void devolverParidad(Scanner scanner) {
 
         System.out.println("Ingresar un número entero: ");
         int num = scanner.nextInt();
 
         esPar(num);
-        scanner.close();
     }
 }

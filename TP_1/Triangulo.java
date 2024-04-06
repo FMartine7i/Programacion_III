@@ -20,9 +20,7 @@ public class Triangulo {
             System.out.println("El triángulo es escaleno");
     }
 
-    public static void respuestaTriangulo() {
-        Scanner scanner = new Scanner(System.in);
-
+    public static void respuestaTriangulo(Scanner scanner) {
         System.out.println("Ingresar el lado A del triángulo: ");
         int a = scanner.nextInt();
         
@@ -38,7 +36,5 @@ public class Triangulo {
         }
         else
             System.out.println("Los lados deben ser mayores a 0");
-
-        scanner.close();
     }
 }
