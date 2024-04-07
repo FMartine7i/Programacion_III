@@ -5,6 +5,7 @@ public class Triangulo {
     public static void esTriangulo(int a, int b, int c){
         if (a + b > c && a + c > b && b + c > a){
             System.out.println("Es un triángulo");
+            tipoTriangulo(a, b, c);
         }
         else
             System.out.println("No es un triángulo");
@@ -30,10 +31,8 @@ public class Triangulo {
         System.out.println("Ingresar el lado C del triángulo: ");
         int c = scanner.nextInt();
 
-        if (a > 0 && b > 0 && c > 0){
+        if (a > 0 && b > 0 && c > 0)
             esTriangulo(a, b, c);
-            tipoTriangulo(a, b, c);
-        }
         else
             System.out.println("Los lados deben ser mayores a 0");
     }

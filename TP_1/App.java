@@ -73,11 +73,12 @@ public class App {
                     ConvertirDistancia.ingresarDistancia(input);
                     break;
                 case 17:
-                System.out.println("\nEjercicio 17: Mostrar día de la semana");
+                    System.out.println("\nEjercicio 17: Mostrar día de la semana");
                     Day.mostrarDia(input);
                     break;
                 case 19:
-                    System.out.println("Formar string");
+                    System.out.println("Ejercicio 19: Formar texto");
+                    FormarTexto.ingresarString(input);
                     break;    
                 default:
                     System.out.println("Ejercicio no válido");
@@ -90,6 +91,7 @@ public class App {
     }
 
     public static void mostrarMenu(){
+        System.out.println();
         System.out.println("------------------- MENU ---------------------");
         System.out.println("Ejercicio 1: Persona");
         System.out.println("Ejercicio 2: Auto");
@@ -104,7 +106,7 @@ public class App {
         System.out.println("Ejercicio 15: Indicar signo y paridad");
         System.out.println("Ejercicio 16: Convertir millas a kilometros");
         System.out.println("Ejercicio 17: Mostrar día de la semana");
-        System.out.println("Ejercicio 19: Formar string");
+        System.out.println("Ejercicio 19: Formar texto");
         System.out.println("0. Salir");
         System.out.println("----------------------------------------------");
         System.out.println("\nElija un ejercicio para mostrar por pantalla: ");

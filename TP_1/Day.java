@@ -31,10 +31,16 @@ public class Day {
     }
 
     public static void esDiaLaboral(int num){
-        if(num == 2 || num == 3 || num == 4 || num == 5 || num == 6)
-            System.out.println("Es día laboral.");
-        else
-            System.out.println("Es fin de semana.");
+        switch (num){
+            case 2, 3, 4, 5:
+                System.out.println("Es día laboral.");
+                break;
+            case 1, 7:
+                System.out.println("Es fin de semana.");
+                break;
+            default:
+                System.out.println();
+        }
     }
 
     public static void mostrarDia(Scanner input) {

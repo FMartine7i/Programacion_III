@@ -8,15 +8,6 @@ public class Celular {
     // constructor por omisión
     public Celular(){}
 
-    // constructor con todos los parámetros
-    public Celular(String modelo, String marca, int memoria, boolean radio, int nroCelular){
-        this.modelo = modelo;
-        this.marca = marca;
-        this.memoria = memoria;
-        this.radio = radio;
-        this.nroCelular = nroCelular;
-    }
-
     public Celular(String modelo, String marca){
         this.modelo = modelo;
         this.marca = marca;

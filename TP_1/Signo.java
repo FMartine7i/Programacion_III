@@ -9,11 +9,12 @@ public class Signo {
         while (num > 0){           
             while (num != 0){
                 if (num > 0)
-                    System.out.println("El número ingresado es positivo");
+                    System.out.print("El número ingresado es positivo");
                 else
-                    System.out.println("El número ingresado es negativo");
+                    System.out.print("El número ingresado es negativo");
                 
-                System.out.println("Ingresar otro número entero (0 para salir): ");
+                esPar(num);
+                System.out.println("\nIngresar otro número entero (0 para salir): ");
                 num = scanner.nextInt();
             }
         }
@@ -28,17 +29,18 @@ public class Signo {
             
             if(num != 0){
                 if (num > 0)
-                        System.out.println("El número ingresado es positivo");
+                        System.out.print("El número ingresado es positivo");
                     else
-                        System.out.println("El número ingresado es negativo");
+                        System.out.print("El número ingresado es negativo");
+
+                esPar(num);
             }
         }
         while(num != 0);
     }
 
     public static void conOpcionString(Scanner input){
-        String option = input.nextLine();
-        String op = option.toUpperCase(); 
+        String option; 
 
         do{
             System.out.println("Ingresar un número entero: ");
@@ -46,13 +48,22 @@ public class Signo {
             
             if(num != 0){
                 if (num > 0)
-                        System.out.println("El número ingresado es positivo");
+                        System.out.print("El número ingresado es positivo");
                     else
-                        System.out.println("El número ingresado es negativo");
+                        System.out.print("El número ingresado es negativo");
             }
+            esPar(num);
             
-            System.out.println("¿Desea introducir más números? (S/N): ");
+            System.out.println("\n¿Desea introducir más números? (S/N): ");
+            option = input.next().toUpperCase();
         }
-        while(op != "N");
-    } 
+        while(!option.equals("N"));
+    }
+    
+    public static void esPar(int num){
+        if (num % 2 == 0)
+            System.out.println(" y par");
+        else
+            System.out.println(" e impar");
+    }
 }
