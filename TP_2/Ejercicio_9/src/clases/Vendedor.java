@@ -5,6 +5,7 @@ public class Vendedor extends Empleado{
 
     public Vendedor(String nombre, String dni, String domicilio, int anioIngreso, int totalVentasMensuales){
         super(nombre, dni, domicilio, anioIngreso);
+        this.categoria = "Vendedor";
         this.totalVentasMensuales = totalVentasMensuales;
     }
 
