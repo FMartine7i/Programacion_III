@@ -15,3 +15,6 @@ TP_2/Ejercicio_*
 
 # Ignorar carpeta out dentro de TP_2
 TP_2/out/
+
+# Ignorar archivos .iml en toda la estructura del proyecto
+*.iml
