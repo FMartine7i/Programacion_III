@@ -1,19 +1,19 @@
 package clases;
 
-public class Vendendor extends Empleado{
-    private int ventasMensuales;
+public class Vendedor extends Empleado{
+    private double totalVentasMensuales;
 
-    public Vendendor(String nombre, String dni, String domicilio, int anioIngreso, int ventasMensuales){
+    public Vendedor(String nombre, String dni, String domicilio, int anioIngreso, int totalVentasMensuales){
         super(nombre, dni, domicilio, anioIngreso);
-        this.ventasMensuales = ventasMensuales;
+        this.totalVentasMensuales = totalVentasMensuales;
     }
 
     public double sueldoTotal(){
-        return ventasMensuales
+        return totalVentasMensuales*0.5 + sueldoBasico;
     }
 
     @Override
-    public String reciboSueldo(){
+    public String imprimirRecibo(){
 
         return "\n------------ RECIBO SUELDO ------------" +
                 "\nNombre: " + nombre +
@@ -22,7 +22,7 @@ public class Vendendor extends Empleado{
                 "\nFecha de ingreso: " + anioIngreso +
                 "\nCategoría: " + categoria +
                 "\nSueldo básico: " + sueldoBasico +
-                "\nComisión por ventas: " +
+                "\nComisión por ventas: " + totalVentasMensuales*0.5 +
                 "\nSueldo a cobrar: " + sueldoTotal() +
                 "\n---------------------------------------\n"
                 ;

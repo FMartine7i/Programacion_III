@@ -1,2 +1,5 @@
-package clases;public enum TipoTapa {
+package clases;
+
+public enum TipoTapa {
+    DURA, BLANDA
 }

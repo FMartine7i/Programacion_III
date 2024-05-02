@@ -1,2 +1,5 @@
-package clases;public enum Jornada {
+package clases;
+
+public enum Jornada {
+    MEDIA, COMPLETA
 }

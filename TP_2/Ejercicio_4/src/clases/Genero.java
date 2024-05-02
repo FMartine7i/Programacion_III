@@ -1,2 +1,5 @@
-package clases;public enum Genero {
+package clases;
+
+public enum Genero {
+    CIENCIA_FICCION, HISTORICO, POLICIAL, AVENTURAS, GOTICO, NOVELA_CORTA, EPISTOLAR, TERROR, FANTASIA
 }

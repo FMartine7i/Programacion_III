@@ -1,2 +1,5 @@
-package clases;public enum TipoComercial {
+package clases;
+
+public enum TipoComercial {
+    INTERNO, SALIDA_CALLE
 }
