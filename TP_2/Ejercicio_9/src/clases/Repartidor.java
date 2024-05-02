@@ -5,6 +5,7 @@ public class Repartidor extends Empleado{
 
     public Repartidor(String nombre, String dni, String domicilio, int anioIngreso, int repartosMensuales){
         super(nombre, dni, domicilio, anioIngreso);
+        this.categoria = "Repartidor";
         this.repartosMensuales = repartosMensuales;
     }
 

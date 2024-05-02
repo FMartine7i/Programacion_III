@@ -5,6 +5,7 @@ public class Administrativo extends Empleado{
 
     public Administrativo(String nombre, String dni, String domicilio, int anioIngreso, Jornada jornada){
         super(nombre, dni, domicilio, anioIngreso);
+        this.categoria = "Administrativo";
         this.jornada = jornada;
     }
 
