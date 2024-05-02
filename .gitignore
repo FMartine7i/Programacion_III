@@ -1,0 +1,17 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Ignorar todos los ejercicios en TP_2
+TP_2/Ejercicio_*
+
+# Permitir los ejercicios 8, 9 y 10 en TP_2
+!TP_2/Ejercicio_8/
+!TP_2/Ejercicio_9/
+!TP_2/Ejercicio_10/
+
+# Ignorar carpetas .idea en toda la estructura del proyecto
+.idea/
+
+# Ignorar carpeta out dentro de TP_2
+TP_2/out/
