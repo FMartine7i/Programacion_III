@@ -13,8 +13,8 @@ TP_2/Ejercicio_*
 # Ignorar carpetas .idea en toda la estructura del proyecto
 .idea/
 
-# Ignorar carpeta out dentro de TP_2
-TP_2/out/
+# Ignorar carpeta out
+out/
 
 # Ignorar archivos .iml en toda la estructura del proyecto
 *.iml
