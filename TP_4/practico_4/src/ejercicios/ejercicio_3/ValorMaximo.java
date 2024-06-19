@@ -1,11 +1,11 @@
 package ejercicios.ejercicio_3;
 
-import java.sql.SQLOutput;
+import ejercicios.auxiliar.IngresarElemento;
 
 public class ValorMaximo {
     private static int maximo = 0;
     private static int index = 0;
-    private static int[] arreglo = {2, 8, 3, 16, 1, 11};
+    private static int[] arreglo = IngresarElemento.ingresarElementoInt();
 
     public static int valorMaximo(int[] arreglo, int index) {
         if (index == arreglo.length -1)

@@ -1,9 +1,11 @@
 package ejercicios.ejercicio_3;
 
+import ejercicios.auxiliar.IngresarElemento;
+
 public class CantidadImpares {
     private static int index = 0;
     private static int contador = 0;
-    private static int[] numeros = {2, 3, 4, 5, 10, 11};
+    private static int[] numeros = IngresarElemento.ingresarElementoInt();
 
     public static int contarImpares(int[] arreglo, int index) {
         if (index >= arreglo.length)

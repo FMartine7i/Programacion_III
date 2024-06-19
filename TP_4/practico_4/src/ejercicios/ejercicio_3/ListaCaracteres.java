@@ -1,25 +1,25 @@
 package ejercicios.ejercicio_3;
 
 public class ListaCaracteres {
-    private static String[] lista = {"java", "csharp", "typescript", "c"};
+    private static String[] lenguajes = {"java", "csharp", "typescript", "c", "javascript", "golang"};
     private static int index = 0;
 
-    public static boolean estaPresente(String[] arreglo, int index) {
-        if (index >= arreglo.length - 1)
+    public static boolean estaPresente(String[] arreglo, int index, String str) {
+        if (index >= arreglo.length)
             return false;
-        if (arreglo[index].equals("java"))
+        if (arreglo[index].equals(str))
             return true;
-        return estaPresente(arreglo, index + 1);
+        return estaPresente(arreglo, index + 1, str);
     }
 
-    public static void resultado() {
+    public static void resultado(String str) {
         System.out.print("\nArreglo: {");
-        for (String lenguaje : lista) {
+        for (String lenguaje : lenguajes) {
             System.out.print(lenguaje + " ");
         }
-        if (estaPresente(lista, index))
-            System.out.println("}\nLa palabra java se encuentra en la lista.");
+        if (estaPresente(lenguajes, index, str))
+            System.out.println("}\nLa palabra " + str + " se encuentra en la lista.");
         else
-            System.out.println("}\nLa palabra java no se encuentra en la lista.");
+            System.out.println("}\nLa palabra " + str + " no se encuentra en la lista.");
     }
 }

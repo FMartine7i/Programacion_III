@@ -1,8 +1,10 @@
 package ejercicios.ejercicio_3;
 
+import ejercicios.auxiliar.IngresarElemento;
+
 public class EsCreciente {
     private static int index = 0;
-    private static int[] arreglo = {2, 4, 5, 6, 8};
+    private static int[] arreglo = IngresarElemento.ingresarElementoInt();
 
     private static boolean arregloEsCreciente(int[] arreglo, int index) {
         if (index == arreglo.length - 1)    // cuando llego al ultimo elemento no comparo más

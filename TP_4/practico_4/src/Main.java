@@ -2,10 +2,8 @@ import ejercicios.BaseInput;
 import ejercicios.EjercicioArreglo;
 import ejercicios.Factorial;
 import ejercicios.conversion_unidades.ConversionUnidades;
-import ejercicios.ejercicio_3.CantidadImpares;
-import ejercicios.ejercicio_3.EsCreciente;
-import ejercicios.ejercicio_3.ListaCaracteres;
-import ejercicios.ejercicio_3.ValorMaximo;
+import ejercicios.ejercicio_11.GestorTarea;
+import ejercicios.ejercicio_3.*;
 import ejercicios.ejercicio_7.InvertirString;
 
 public class Main extends BaseInput {
@@ -33,10 +31,7 @@ public class Main extends BaseInput {
                     break;
                 case 3:
                     System.out.println("\nEjercicio 3: Recursividad");
-                    ListaCaracteres.resultado();
-                    CantidadImpares.resultado();
-                    EsCreciente.resultado();
-                    ValorMaximo.resultado();
+                    Submenu.renderMenu();
                     break;
                 case 4:
                     System.out.println("\nEjercicio 4: Árbol de lista de nombres");
@@ -74,7 +69,12 @@ public class Main extends BaseInput {
                     break;
                 case 11:
                     System.out.println("\nEjercicio 11: Administrar tareas");
-
+                    javax.swing.SwingUtilities.invokeLater(new Runnable() {
+                        @Override
+                        public void run() {
+                            new GestorTarea();
+                        }
+                    });
                     break;
                 default:
                     System.out.println("Ejercicio no válido");
