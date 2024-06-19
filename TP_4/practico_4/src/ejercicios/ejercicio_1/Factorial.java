@@ -1,8 +1,9 @@
-package ejercicios;
+package ejercicios.ejercicio_1;
 
+import ejercicios.BaseInput;
 import ejercicios.excepciones.IngresaNumeroNegativoException;
 
-public class Factorial extends BaseInput{
+public class Factorial extends BaseInput {
     public int calcularFactorial(int num) throws IngresaNumeroNegativoException {
         if (num < 0)
             throw new IngresaNumeroNegativoException("Error: número negativo ingresado.");
