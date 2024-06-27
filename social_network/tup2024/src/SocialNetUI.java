@@ -8,7 +8,7 @@ public class SocialNetUI extends JFrame {
     private JLabel profilePic;
     private JList<Usuario> friendsList;
     private JTextField searchField;
-    private RoundedBtn send;
+    private RoundedBtn sendBtn;
 
     public SocialNetUI() {
         createUIComponents();
@@ -31,11 +31,37 @@ public class SocialNetUI extends JFrame {
         mainPanel.setLayout(new BorderLayout());
         setContentPane(mainPanel);
 
+        JPanel navPanel = new JPanel();
+        navPanel.setPreferredSize(new Dimension(getWidth() / 4, getHeight()));
+        navPanel.setBackground(Color.decode("#0f0d12"));
+        navPanel.setLayout(new FlowLayout(FlowLayout.LEFT, 10, 5));
+
+        String[] options = {"Home", "Explore", "Notifications", "Messages"};
+        for (String option : options) {
+            JLabel optionLabel = new JLabel(option);
+            optionLabel.setForeground(Color.WHITE);
+            optionLabel.setFont(new Font("Arial", Font.PLAIN, 16));
+            navPanel.add(optionLabel);
+        }
+        mainPanel.add(navPanel, BorderLayout.WEST);
+
+        JPanel header = new JPanel();
+        header.setPreferredSize(new Dimension(getWidth(), getHeight() / 8));
+        header.setBackground(Color.decode("#8d0aff"));
+        mainPanel.add(header, BorderLayout.NORTH);
+
+        JPanel searchPanel = new JPanel();
+        searchPanel.setLayout(new FlowLayout());
+        searchPanel.setOpaque(false);
+        mainPanel.add(searchPanel, BorderLayout.CENTER);
+
         usersList = new JList<>();
         profilePic = new JLabel();
         friendsList = new JList<>();
         searchField = new JTextField();
-        send = new RoundedBtn("Enviar");
+
+        sendBtn = new RoundedBtn("Enviar");
+        searchPanel.add(sendBtn);
 
         setVisible(true);
     }
