@@ -33,7 +33,7 @@ public class SocialNetUI extends JFrame {
 
         JPanel navPanel = new JPanel();
         navPanel.setPreferredSize(new Dimension(getWidth() / 4, getHeight()));
-        navPanel.setBackground(Color.decode("#0f0d12"));
+        navPanel.setBackground(Color.decode("#1D1B1E"));
         navPanel.setLayout(new FlowLayout(FlowLayout.LEFT, 10, 5));
 
         String[] options = {"Home", "Explore", "Notifications", "Messages"};
@@ -46,6 +46,10 @@ public class SocialNetUI extends JFrame {
         mainPanel.add(navPanel, BorderLayout.WEST);
 
         JPanel header = new JPanel();
+        JLabel logoLabel = new JLabel("Label");
+        logoLabel.setForeground(Color.WHITE);
+        logoLabel.setFont(new Font("Arial", Font.PLAIN, 22));
+        header.add(logoLabel);
         header.setPreferredSize(new Dimension(getWidth(), getHeight() / 8));
         header.setBackground(Color.decode("#8d0aff"));
         mainPanel.add(header, BorderLayout.NORTH);
